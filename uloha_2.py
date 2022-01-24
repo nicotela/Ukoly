@@ -1,8 +1,9 @@
-def my_function(input):
-	#implementation of my function, computing of result
-	return result
+def line_counter (path_to_file):
+    file_open = open (path_to_file)
+    text = file_open.read()
+    file_open.close()
+    count_lines = text.count("\n") + 1
+    return count_lines
 
-input1 = …….
-input2 = …….
-print(my_function(input1))
-print(my_function(input2))
+result = line_counter("/Users/nicolgotzova/Documents/Ukoly/Data/data2.txt")
+print (result)
