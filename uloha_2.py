@@ -1,7 +1,6 @@
 def line_counter (path_to_file):
-    file_open = open (path_to_file)
-    text = file_open.read()
-    file_open.close()
+    with open(path_to_file) as f:
+        text = f.read()
     count_lines = text.count("\n") + 1
     return count_lines
 
