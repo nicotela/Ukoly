@@ -6,4 +6,3 @@ def line_counter(path_to_file):
 
 result = line_counter("/Users/nicolgotzova/Documents/Ukoly/Data/data2.txt")
 print(result)
-#comment
